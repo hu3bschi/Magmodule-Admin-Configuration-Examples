@@ -1,0 +1,29 @@
+<!--
+/**
+ * Die adminhtml.xml ist nicht nötig wenn adminhtml in der config.xml
+ * konfiguriert wird.
+ */
+-->
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <examplesection translate="title" module="examplemodule">
+                                        <title>Example Configurations Module (adminhtml.xml)</title>
+                                        <sort_order>50</sort_order>
+                                    </examplesection>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                 </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

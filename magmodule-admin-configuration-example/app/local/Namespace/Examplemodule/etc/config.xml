@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <modules>
+        <Namespace_Examplemodule>
+            <version>0.1.0</version>
+        </Namespace_Examplemodule>
+    </modules>
+    <adminhtml>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <examplesection translate="title" module="examplemodule">
+                                            <title>Example Configurationtab (config.xml)</title><!-- Konfiguration der Berechtigungen -->
+                                            <sort_order>50</sort_order>
+                                        </examplesection>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+    <global>
+        <helpers>
+            <examplemodule>
+                <class>Namespace_Examplemodule_Helper</class>
+            </examplemodule>
+        </helpers>
+    </global>
+</config>

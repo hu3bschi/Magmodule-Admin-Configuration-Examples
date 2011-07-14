@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <tabs>
+        <examplemodule module="examplemodule" translate="label">
+            <label>Example Configurationtab</label>
+            <sort_order>10</sort_order>
+        </examplemodule>
+    </tabs>
+    <sections>
+        <examplesection module="examplemodule" translate="label">
+            <label>General Configurations</label> <!-- Name of the submenu in the 'Custom Configuration' tab -->
+            <tab>examplemodule</tab> 
+            <sort_order>200</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website> <!-- Whether to show the options on website page -->
+            <show_in_store>1</show_in_store> <!-- Whether to show the options on store page -->
+
+            <groups>
+                <examplegroup translate="label">
+                    <label>Configurations</label>
+                    <frontend_type>text</frontend_type>
+                    <comment><![CDATA[<div style="border: 1px solid #e1e1e1; padding: 2px 10px;"><b>HTML Example Text</b><br /><ul><li><em>example 1<em></li><li><em>example 2<em></li></ul></div>]]></comment>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+
+                    <fields>
+                        <textfieldexample translate="label tooltip comment">
+                            <label>Example Text Field</label>
+                            <comment>example of custom textfield.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </textfieldexample>
+                        <selectfieldexample translate="label tooltip comment">
+                            <label>Is Enabled</label>
+                            <comment>Enable this module.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </selectfieldexample>
+                    </fields>
+                </examplegroup>
+            </groups>
+        </examplesection>
+    </sections>
+</config>
